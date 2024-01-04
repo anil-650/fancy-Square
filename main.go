@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func square(n int) int{
+func Square(n int) int{
 	s:= math.Round(math.Pow(float64(n),2))
 	return int(s)
 }
@@ -18,5 +18,5 @@ func main() {
 	fmt.Print("Enter number: ")
 	fmt.Scan(&n1)
 
-	fmt.Println(n1, "^ 2 = ", square(n1))
+	fmt.Println(n1, "^ 2 = ", Square(n1))
 }
