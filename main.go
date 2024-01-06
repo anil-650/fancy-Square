@@ -5,13 +5,13 @@ import (
 	"math"
 )
 
-func Square(n int) int{
-	s:= math.Round(math.Pow(float64(n),2))
-	return int(s)
+func Square(n float64) float64{
+	s:= math.Pow(n, 2)
+	return s
 }
 
 func main() {
-	var n1 int
+	var n1 float64
 	qs:=`Program to calculate Square of a given number
 --------------------------------------------`
 	fmt.Println(qs)
